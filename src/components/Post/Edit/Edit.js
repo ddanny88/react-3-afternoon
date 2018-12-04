@@ -20,13 +20,27 @@ export default class Edit extends Component {
   }
 
   updatePost() {
-
+    this.props.upDatePost(this.props.id, this.state.text)
+    this.props.hideEdit()
   }
 
+
+
+
+
+
+
+
+
+
+
+  
   render() {
     // More destructuring!
     const { hideEdit } = this.props;
     const { text } = this.state;
+
+
 
     return (
       <section className="Edit__parent">
